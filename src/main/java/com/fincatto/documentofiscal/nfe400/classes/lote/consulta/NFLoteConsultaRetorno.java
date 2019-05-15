@@ -33,7 +33,7 @@ public class NFLoteConsultaRetorno extends DFBase {
     @Element(name = "cStat", required = true)
     private String status;
 
-    @Element(name = "dhRecbto", required = true)
+    @Element(name = "dhRecbto", required = false)
     private LocalDateTime dataHoraRecebimento;
 
     @Element(name = "xMotivo", required = true)
