@@ -1,4 +1,4 @@
-#Biblioteca útil para projeto NF-e   
+# Biblioteca útil para projeto NF-e   
 
 Esta lib, muito conhecida como Fincatto que no github está em https://github.com/wmixvideo/nfe, é utilizada pelo projeto Erpforme para:
 * Serialização de xml para envio para Sefaz;
@@ -13,10 +13,10 @@ Nesta "cópia" no nosso git, os seguintes ajustes são necessários para atender
     * Na classe NFLoteConsultaRetorno: retirada da obrigatoriedade do campo dataHoraRecebimento referente a tag dhRecbto;
     * Na classe NFEndereco: ajustada a validação do logradouro para aceitar entre 2 e 60 caracteres.
 
-###Descrição original no github:
+### Descrição original no github:
 https://github.com/wmixvideo/nfe
 
-#Nota Fiscal Eletrônica
+# Nota Fiscal Eletrônica
 
 Comunicador de nota fiscal e nota fiscal do consumidor da [fazenda](http://www.nfe.fazenda.gov.br/portal/principal.aspx).<br/>
 [![Java CI](https://github.com/wmixvideo/nfe/workflows/Java%20CI/badge.svg)](https://github.com/wmixvideo/nfe/workflows/Java%20CI/badge.svg)
