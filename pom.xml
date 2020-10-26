@@ -127,17 +127,18 @@
     </dependencies>
 
     <distributionManagement>
-        <repository>
-            <id>mvn_deployer</id>
-            <name>Alterdata Nimbus Releases</name>
-            <url>http://maven.nimbus.alterdata.matriz:8081/nexus/content/repositories/alterdata-nimbus-releases/</url>
-        </repository>
         <snapshotRepository>
-            <name>Alterdata Nimbus Snapshots</name>
-            <id>mvn_deployer</id>
-            <url>http://maven.nimbus.alterdata.matriz:8081/nexus/content/repositories/alterdata-nimbus-snapshots</url>
-            <uniqueVersion>true</uniqueVersion>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+        <!--        <repository>-->
+        <!--            <id>github</id>-->
+        <!--            <url>https://maven.pkg.github.com/wmixvideo/nfe</url>-->
+        <!--        </repository>-->
     </distributionManagement>
 
     <build>
@@ -246,6 +247,26 @@
                             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
+                            </execution>
+                        </executions>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>

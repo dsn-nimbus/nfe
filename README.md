@@ -1,23 +1,5 @@
-# Biblioteca útil para projeto NF-e   
-
-Esta lib, muito conhecida como Fincatto que no github está em https://github.com/wmixvideo/nfe, é utilizada pelo projeto Erpforme para:
-* Serialização de xml para envio para Sefaz;
-* Deserialização de xml de retorno da Sefaz. 
-
-Nesta "cópia" no nosso git, os seguintes ajustes são necessários para atender ao nosso contexto no projeto Erpforme:
-
-* No pom.xml principal para deploy no nosso repositório [Nexus](http://maven.nimbus.alterdata.matriz:8081/nexus/content/repositories/public/com/github/wmixvideo/nfe/):
-    * Substituição **distributionManagement**;
-    * Remoção do plugin **maven-gpg-plugin**
-* No projeto para atender ao nosso uso para serialização para envio de NF-e/NFC-e e deserialização de retorno da Sefaz:
-    * Na classe NFLoteConsultaRetorno: retirada da obrigatoriedade do campo dataHoraRecebimento referente a tag dhRecbto;
-    * Na classe NFEndereco: ajustada a validação do logradouro para aceitar entre 2 e 60 caracteres.
-
-### Descrição original no github:
-https://github.com/wmixvideo/nfe
-
-# Nota Fiscal Eletrônica
-
+Nota Fiscal Eletrônica
+===
 Comunicador de nota fiscal e nota fiscal do consumidor da [fazenda](http://www.nfe.fazenda.gov.br/portal/principal.aspx).<br/>
 [![Java CI](https://github.com/wmixvideo/nfe/workflows/Java%20CI/badge.svg)](https://github.com/wmixvideo/nfe/workflows/Java%20CI/badge.svg)
 [![Build Status](https://travis-ci.org/wmixvideo/nfe.svg?branch=master)](http://travis-ci.org/#!/wmixvideo/nfe)
