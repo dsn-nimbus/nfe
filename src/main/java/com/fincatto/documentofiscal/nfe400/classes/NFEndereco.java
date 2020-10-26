@@ -43,7 +43,7 @@ public class NFEndereco extends DFBase {
     private String telefone;
 
     public void setLogradouro(final String logradouro) {
-        StringValidador.tamanho60(logradouro, "Logradouro");
+        StringValidador.tamanho2ate60(logradouro, "Logradouro");
         this.logradouro = logradouro;
     }
 
