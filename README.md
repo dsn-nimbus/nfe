@@ -6,7 +6,7 @@ Esta lib, muito conhecida como Fincatto que no github está em https://github.co
 
 Nesta "cópia" no nosso git, os seguintes ajustes são necessários para atender ao nosso contexto no projeto Erpforme:
 
-* No pom.xml principal para deploy no nosso repositório Nexus:
+* No pom.xml principal para deploy no nosso repositório [Nexus](http://maven.nimbus.alterdata.matriz:8081/nexus/content/repositories/public/com/github/wmixvideo/nfe/):
     * Substituição **distributionManagement**;
     * Remoção do plugin **maven-gpg-plugin**
 * No projeto para atender ao nosso uso para serialização para envio de NF-e/NFC-e e deserialização de retorno da Sefaz:
