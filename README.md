@@ -16,8 +16,8 @@ Nesta "cópia" no nosso git, os seguintes ajustes são necessários para atender
 ###Descrição original no github:
 https://github.com/wmixvideo/nfe
 
-Nota Fiscal Eletrônica
-===
+#Nota Fiscal Eletrônica
+
 Comunicador de nota fiscal e nota fiscal do consumidor da [fazenda](http://www.nfe.fazenda.gov.br/portal/principal.aspx).<br/>
 [![Java CI](https://github.com/wmixvideo/nfe/workflows/Java%20CI/badge.svg)](https://github.com/wmixvideo/nfe/workflows/Java%20CI/badge.svg)
 [![Build Status](https://travis-ci.org/wmixvideo/nfe.svg?branch=master)](http://travis-ci.org/#!/wmixvideo/nfe)
